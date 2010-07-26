@@ -9,7 +9,9 @@ REQUIREMENTS
 Platform
 --------
 
-Known to work on Ubuntu, should work on Debian.
+Known to work on Ubuntu 10.4. Probably needs a little bit of work for
+older versions of Ubuntu and Debian. Probably needs more work for
+other OSs.
 
 
 ATTRIBUTES
