@@ -1,0 +1,41 @@
+{
+  "version": "0.0.1",
+  "providing": {
+
+  },
+  "attributes": {
+
+  },
+  "replacing": {
+
+  },
+  "dependencies": {
+
+  },
+  "groupings": {
+
+  },
+  "long_description": "",
+  "recipes": {
+
+  },
+  "recommendations": {
+
+  },
+  "license": "Apache 2.0",
+  "maintainer": "Avvo, Inc.",
+  "suggestions": {
+
+  },
+  "maintainer_email": "ben@avvo.com",
+  "name": "mongodb",
+  "conflicting": {
+
+  },
+  "platforms": {
+    "ubuntu": [
+
+    ]
+  },
+  "description": "Installs mongodb"
+}
