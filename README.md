@@ -9,9 +9,8 @@ REQUIREMENTS
 Platform
 --------
 
-Known to work on Ubuntu 10.4. Probably needs a little bit of work for
-older versions of Ubuntu and Debian. Probably needs more work for
-other OSs.
+Known to work on Ubuntu 10.4. Should work on older Ubuntu and Debian
+Lenny. Probably needs more work for other OSs.
 
 
 ATTRIBUTES

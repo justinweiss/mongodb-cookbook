@@ -1,1 +1,17 @@
-deb http://downloads.mongodb.org/distros/ubuntu 10.4 10gen
+<% version = nil -%>
+<% if node[:platform] == 'ubuntu' -%>
+  <% version = case node[:platform_version] 
+               when '10.04'
+                 '10.4'
+               when '9.10'
+                 '9.10'
+               when '9.04'
+                 '9.4'
+               end
+-%>
+<% elsif node[:platform] == 'debian' -%>
+  <% version = node[:platform_version] -%>
+<% end -%>
+<% if version -%>
+deb http://downloads.mongodb.org/distros/<%= node[:platform] %> <%= version %> 10gen
+<% end -%>
