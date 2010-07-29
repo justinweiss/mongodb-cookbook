@@ -23,3 +23,19 @@ template "/etc/apt/sources.list.d/mongodb.list" do
 end
 
 package "mongodb-stable"
+
+service "mongodb" do
+  case node[:platform]
+  when "ubuntu"
+    if node[:platform_version].to_f >= 9.10
+      provider Chef::Provider::Service::Upstart
+    end
+  end
+  action [:start]
+end
+
+template "/etc/mongodb.conf" do
+  source "mongodb.conf.erb"
+  mode 0644
+  notifies :restart, resources(:service => "mongodb")
+end
